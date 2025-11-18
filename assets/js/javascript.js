@@ -2,4 +2,10 @@ console.log("JS funguje");
 
 const btn = document.getElementById("btn");
 
-console.log(btn)
+const text = document.getElementById("text");
+
+if (btn && text){
+    btn.addEventListener("click",() => {
+        text.textContent = "zmenene cez js";
+    })
+}
